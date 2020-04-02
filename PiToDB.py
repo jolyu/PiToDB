@@ -31,4 +31,4 @@ def PushDB(dbRef, data):
     # Add data with key tsShort to the database with reference dbRef
     dbRef.child(tsShort).set(data)
 
-
+    print("Pushed data to database.\n")
