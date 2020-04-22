@@ -23,7 +23,7 @@ def PushDB(dbRef, data):
     Push data to a database with reference dbRef. Data should be a dictionary with only data, with no time, it will be added when sent.
     """
     # Finds current timestamp
-    timestamp = datetime().now().timestamp()
+    timestamp = datetime.now().timestamp()
     # Converts it to string firebase can use
     tsShort = str(round(timestamp))
     # Add the timestamp to dataset
